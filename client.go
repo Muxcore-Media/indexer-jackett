@@ -112,6 +112,11 @@ func (c *Client) Search(ctx context.Context, query contracts.SearchQuery) ([]con
 				r.PublishDate = attr.Value
 			case "category":
 				r.Categories = append(r.Categories, attr.Value)
+			default:
+				if r.Extra == nil {
+					r.Extra = make(map[string]string)
+				}
+				r.Extra[attr.Name] = attr.Value
 			}
 		}
 		results = append(results, r)
