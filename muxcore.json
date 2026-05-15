@@ -1,0 +1,11 @@
+{
+  "name": "Jackett Indexer",
+  "description": "Jackett/Prowlarr indexer connector via Torznab API for MuxCore.",
+  "version": "1.0.0",
+  "icon": "",
+  "author": "MuxCore",
+  "kind": "provider",
+  "capabilities": ["indexer.torznab", "indexer.newznab", "indexer.search"],
+  "dependencies": [],
+  "homepage": "https://github.com/Muxcore-Media/indexer-jackett"
+}
