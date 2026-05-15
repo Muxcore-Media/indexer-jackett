@@ -25,7 +25,7 @@ func (m *Module) Info() contracts.ModuleInfo {
 		ID:           "indexer-jackett",
 		Name:         "Jackett",
 		Version:      "1.0.0",
-		Kind:         contracts.ModuleKindProvider,
+		Kinds:        []contracts.ModuleKind{contracts.ModuleKindIndexer},
 		Description:  "Jackett/Prowlarr indexer connector via Torznab API",
 		Author:       "MuxCore",
 		Capabilities: []string{"indexer.torznab", "indexer.newznab", "indexer.search"},
